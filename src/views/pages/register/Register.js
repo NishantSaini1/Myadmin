@@ -19,14 +19,14 @@ const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmpassword, setConfirmPassword] = useState("");
+  const [repassword, setrepassword] = useState("");
 
   const handleChange = (e) =>{
     setName(e.target.value);
     setEmail(e.target.value);
     setPassword(e.target.value);
   
-    setConfirmPassword(e.target.value);
+    setrepassword(e.target.value);
   };
   const Myregister = (e) =>{
 
@@ -35,7 +35,7 @@ const Register = () => {
       email,
       password,
       name,
-      confirmpassword
+      repassword
     };
     result.push(data);
   };
@@ -78,7 +78,7 @@ const Register = () => {
                         <CIcon name="cil-lock-locked" />
                       </CInputGroupText>
                     </CInputGroupPrepend>
-                    <CInput type="password"value={confirmpassword} onChange={(e)=>setConfirmPassword(e.target.value)} placeholder="Repeat password" autoComplete="new-password" />
+                    <CInput type="password"value={repassword} onChange={(e)=>setrepassword(e.target.value)} placeholder="Repeat password" autoComplete="new-password" />
                   </CInputGroup>
                   <CButton color="success"type="submit" onClick={Myregister} block>Create Account</CButton>
                 </CForm>
