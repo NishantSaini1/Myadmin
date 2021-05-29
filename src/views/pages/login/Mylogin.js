@@ -23,9 +23,9 @@ function Mylogin() {
   return (
     <div className="App">
 
-       <SignOut />
+      
         <section>        
-
+        <SignOut />
         {user ? <ChatRoom /> : <SignIn />}
       </section>
 
@@ -43,7 +43,7 @@ function SignIn() {
   return (
     <>
 
-
+<h4 className="vhattext">Chat App</h4>
       <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
     
     </>
@@ -95,7 +95,7 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Text Message" />
 
       <button type="submit" disabled={!formValue}>🕊️</button>
 

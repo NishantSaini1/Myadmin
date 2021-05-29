@@ -41,7 +41,7 @@ const User = React.lazy(() => import('./views/users/User'));
 
  const Mylogin = React.lazy(() => import('./views/pages/login/Mylogin'));
  const Storagefile = React.lazy(() => import('./views/pages/login/Storagefile'));
-//  const Addroom = React.lazy(() => import('./views/pages/login/Addroom'));
+ const Chatapp = React.lazy(() => import('./views/pages/login/Chatapp'));
 //  const ChatRoom = React.lazy(() => import('./views/pages/login/ChatRoom'));
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -86,9 +86,9 @@ const routes = [
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
 
-  { path: '/chatapp', exact: true, name: 'Mylogin', component: Mylogin },
+  { path: '/chat', exact: true, name: 'Mylogin', component: Mylogin },
   { path: '/storagefile', exact: true, name: 'Storagefile', component: Storagefile },
-  // { path: '/addroom', exact: true, name: 'Addroom', component: Addroom },
+   { path: '/chatapp', exact: true, name: 'Chatapp', component: Chatapp },
   // { path: '/chatroom', exact: true, name: 'ChatRoom', component: ChatRoom },
 ];
 

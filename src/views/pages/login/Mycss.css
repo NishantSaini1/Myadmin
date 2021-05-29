@@ -26,11 +26,7 @@ footer.StickyFooter {
   width: 98%;
   margin: 5px 0 0 2%;
 }
-  
-.MessageBox .ChatMessage {
-  width: 80%;
-  min-height: 40px;
-}
+
   
 .MessageBox .ChatMessage .RightBubble {
   position: relative;
@@ -125,4 +121,7 @@ footer.StickyFooter {
 .ChatContent {
   overflow-y: scroll;
   height: 600px;
+}
+main.c-main {
+    margin: 0px;
 }

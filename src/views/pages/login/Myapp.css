@@ -29,14 +29,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: rgb(40, 37, 53);
 }
 
 main {
   padding: 10px;
   height: 80vh;
-  margin: 10vh 0 10vh;
+  margin: 0px 20px!important;
+  /* margin: 10vh 0 10vh; */
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -81,12 +82,15 @@ input {
   border: none;
   padding: 0 10px;
 }
-
+button.sign-out {
+  position: fixed;
+  top: 21%;
+}
 button {
-  background-color: #282c34; /* Green */
+  background-color: #3c5f6f; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 6px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -101,10 +105,11 @@ button:disabled {
 
 
 .sign-in {
-  color: #282c34;
-  background: white;
+  color: #ffffff;
+  background: #8bc34a;
   max-width: 400px;
   margin: 0 auto;
+  padding: 10px 25px;
 }
 
 
@@ -151,4 +156,10 @@ img {
   height: 40px;
   border-radius: 50%;
   margin: 2px 5px;
+}
+
+  
+.MessageBox .ChatMessage {
+  width: 80%;
+  min-height: 40px;
 }

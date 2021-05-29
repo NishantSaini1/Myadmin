@@ -41,16 +41,7 @@ function Login (){
     result.push(data);
   };
   
-    // e.preventDefault()
-
-
-   
-    // fire.database().ref().child('contact').push(values.email,values.password,err =>{
-    //   if (err)
-    //   console.log(err)
-  
-    // })
-   
+    
   
  
   return (
